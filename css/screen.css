@@ -51,7 +51,7 @@ div.slide {
   -webkit-transition: margin 0.25s ease-in-out;
   -moz-transition: margin 0.25s ease-in-out;
   -o-transition: margin 0.25s ease-in-out;
-  background: #000000 url('../logo.png') no-repeat top right;
+  background: #000000 url('theme/logo.png') no-repeat top right;
 }
 
 /* Expose */
@@ -230,7 +230,7 @@ div.slide p {
 .slide.past {
   display: block;
   margin-left: -1400px;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .slide.current {
@@ -241,7 +241,7 @@ div.slide p {
 .slide.future {
   display: block;
   margin-left: 500px;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .slide.far-future {
@@ -261,7 +261,7 @@ body.three-d div.slides {
 header:not(:only-child) {
   font-family: Verdana, sans-serif;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 65px;
   letter-spacing: -.05em;
   color: #ffffff;
   text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
@@ -325,7 +325,12 @@ a {
 
 pre {
   font-size: 16px;
-  font-family: Monaco, Courier, monospace;
+  font-family: Courier, monospace;
+}
+code {
+  color: #bfa6a6;
+  font-size: 20px;
+  font-family: Courier, monospace;
 }
 
 li {
@@ -432,10 +437,11 @@ aside {
     text-indent: 10px;
   }
 
-.notes {
+p.notes {
   display: none;
   padding: 10px;
   background: #ccc;
+  color: #111;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -506,10 +512,26 @@ pre .vg { color: #93a1a1 } /* Name.Variable.Global */
 pre .vi { color: #93a1a1 } /* Name.Variable.Instance */
 pre .il { color: #6c71c4 } /* Literal.Number.Integer.Long */
 
-pre .lineno {
+pre .lineno,
+.linenodiv pre {
     background-color: #073642;
     padding: 0 4px 0 15px;
     display: inline-block;
+}
+td.linenos,
+.linenodiv pre {
+    width: 22px;
+    text-align: right;
+}
+td.code pre {
+    padding: 0 5px;
+}
+.highlighttable {
+    border-collapse: collapse;
+    width: 800px;
+}
+.highlighttable td {
+    padding: 0;
 }
 
 #blank {
@@ -526,23 +548,26 @@ pre .lineno {
 /* title slide */
 .slide-wrapper:first-child .slide {
     text-align: center;
-    background: #000000 url('../title-slide.png') no-repeat top center;
+    background: #000000 url('theme/title-slide.png') no-repeat top center;
 }
 .slide-wrapper:first-child header:not(:only-child) {
     position: static;
-    padding-top: 150px;
+    padding-top: 85px;
     color: #000000;
-    width: 630px;
+    width: 770px;
     margin: 0 auto;
 }
 .slide-wrapper:first-child section {
     margin-top: 10px;
     color: #000000;
 }
-
 .slide-wrapper:first-child .slide header:only-child h1 {
     display: block;
     width: auto;
     color: #000000;
     padding-top: 50px;
+}
+.slide-wrapper:first-child h2 {
+    font-size: 25px;
+    font-weight: normal;
 }
