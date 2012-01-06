@@ -429,12 +429,14 @@ aside {
     bottom: 6px;
     left: 10px;
     text-indent: 10px;
+    color: #ffffff;
   }
   aside.page_number {
     position: absolute;
     bottom: 6px;
     right: 10px;
     text-indent: 10px;
+    color: #ffffff;
   }
 
 p.notes {
