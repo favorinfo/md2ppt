@@ -51,7 +51,7 @@ div.slide {
   -webkit-transition: margin 0.25s ease-in-out;
   -moz-transition: margin 0.25s ease-in-out;
   -o-transition: margin 0.25s ease-in-out;
-  background: #000000 url('theme/logo.png') no-repeat top right;
+  background: #000000 url('../logo.png') no-repeat top right;
 }
 
 /* Expose */
@@ -550,7 +550,7 @@ td.code pre {
 /* title slide */
 .slide-wrapper:first-child .slide {
     text-align: center;
-    background: #000000 url('theme/title-slide.png') no-repeat top center;
+    background: #000000 url('../title-slide.png') no-repeat top center;
 }
 .slide-wrapper:first-child header:not(:only-child) {
     position: static;
