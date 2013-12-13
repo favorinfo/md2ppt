@@ -51,7 +51,7 @@ div.slide {
   -webkit-transition: margin 0.25s ease-in-out;
   -moz-transition: margin 0.25s ease-in-out;
   -o-transition: margin 0.25s ease-in-out;
-  background: #000000 url('../logo.png') no-repeat top right;
+  background: #000000;
 }
 
 /* Expose */
@@ -581,8 +581,15 @@ td.code pre {
     bottom: 0;
     color: #FFFFFF;
     margin: 0;
-    padding: 0.2em 0;
+    padding: 0.5em 0;
     position: fixed;
-    text-align: center;
     width: 100%;
+}
+#footnotes img {
+    float: right;
+}
+.footerContent {
+    width: 840px;
+    margin: 0 auto;
+    line-height: 35px;
 }
