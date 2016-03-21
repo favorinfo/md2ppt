@@ -2,7 +2,7 @@
 Ashy
 ====
 
-Ashy is a simple and nice them for `landslide`_ presentations framework.
+Ashy is a simple and nice theme for `landslide`_ presentations framework.
 
 .. _landslide: https://github.com/adamzap/landslide
 
@@ -11,7 +11,7 @@ Using it
 ========
 
 To use Ashy simply copy the root folder to your themes directory in your
-landslide presentation and then add the route in your .cfg file
+landslide presentation and then add the path in your .cfg file
 
 ::
 
