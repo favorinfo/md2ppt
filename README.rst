@@ -20,6 +20,36 @@ landslide presentation and then add the path in your .cfg file
     ...
 
 
+Also if your presentation is in another git repository and you want to use the
+latest version of Ashy then instead of copying the folder you can add this repo
+as a git submodule of your repository:
+
+::
+
+    cd my-slides-root-folder
+    mkdir themes
+    cd themes
+    git submodule add git@github.com:caroaguilar/ashy.git
+
+
+Don't forget to add it to your config file:
+
+::
+
+    [landslide]
+    theme = themes/ashy
+    ...
+
+
+Then you can build the landslide project running:
+
+::
+
+    landslide my-config.cfg
+
+
+And that's it! Presentation is already using Ashy!
+
 
 License
 =======
