@@ -96,7 +96,6 @@ header:not(:only-child) {
   letter-spacing: -.05em;
   color: white;
   color: black;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
   position: absolute;
   left: 30px;
   top: 25px;
@@ -119,7 +118,6 @@ header h2:first-child {
 section, .slide header:only-child h1 {
   font-family: 'Open Sans', sans-serif;
   color: #3f3f3f;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 100px;
@@ -227,7 +225,6 @@ li pre { margin-left: 0em; }
 }
 
 .sidebar h2 {
-  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
   margin: 0 0 16px;
   padding: 0;
 }
@@ -501,7 +498,6 @@ body.presenter_view div#current_presenter_notes {
 body.presenter_view div#current_presenter_notes section {
   font-family: 'Open Sans', sans-serif;
   color: black;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
   display: block;
   overflow: visible;
   position: relative;
