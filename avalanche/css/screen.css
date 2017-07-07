@@ -14,6 +14,7 @@ div.presentation, div.slide {
 div.slide h1, div.slide h2, div.slide h3, div.slide h4, div.slide h5, div.slide h6 {
   color: navy;
   font-weight: normal;
+  text-align: center;
 }
 
 pre {
@@ -23,6 +24,7 @@ pre {
 
 li {
   padding: 10px 0;
+  font-size: 30px;
 }
 
 table {
@@ -34,6 +36,7 @@ table th {
   text-align: left;
   border-bottom: 1px solid #666;
 }
+
 table td, table th {
   padding-left:   10px;
   padding-right:  10px;
@@ -63,13 +66,17 @@ aside.source, aside.page_number {
 }
 
 /* Quote and blockquote */
-blockquote          { text-indent: -1ex; margin-bottom: 10px;}
+blockquote          { 
+  text-indent: 4ex; 
+  margin-bottom: 10px;
+  border-left: solid 8px #778;
+}
 blockquote *        { quotes: none; }
-blockquote p:before { content: '\201C'; }
-blockquote p:after  { content: '\201D'; }
-blockquote p        { margin:0; padding:0; }
-blockquote q:before { content: '\2018'; }
-blockquote q:after  { content: '\2019'; }
+/*blockquote p:before { content: '\201C'; }
+blockquote p:after  { content: '\201D'; }*/
+blockquote p        { margin:0; padding:0; font-size: 30px;}
+/*blockquote q:before { content: '\2018'; }
+blockquote q:after  { content: '\2019'; }*/
 .cite { margin:0; text-align:right; margin-right: 40px;}
 
 /***************************************************************************/
@@ -108,7 +115,8 @@ div.titleslide h1 { padding-top: 140px; font-size: 80px; font-weight: bold;}
 div.slides div.imageslide {margin: 0; width: 1024px; height: 768px;}
 div.imageslide img { 
   position: absolute; 
-  top: 0; left: 0; 
+  top: 5%; 
+  left: 0; 
   width: 1024px; 
   max-width: 1024px; max-height: 768px;
   z-index: 0; 
@@ -200,6 +208,8 @@ ol {
 /* Image alignment options. Note that we align centre by default */
 img { display: block; margin: auto; max-width: 864px; max-height: 500px;}
 
+section img { border-radius: 10px;}
+
 section img.align-center, section img.align-centre, section img.center, section img.centre {
   display: block;
   margin-left: auto;
@@ -230,6 +240,10 @@ section img.float-left {
   float: left;
   margin-right: auto;
   margin-left: 0;
+}
+
+section ul {
+  padding-left: 10%;
 }
 
 /* Blank screen */
@@ -609,3 +623,6 @@ div#current_presenter_notes {
 div.slide div.presenter_notes {
   display: none;
 }
+
+
+footer img { position: absolute; height: 40px; bottom: 30px;}
